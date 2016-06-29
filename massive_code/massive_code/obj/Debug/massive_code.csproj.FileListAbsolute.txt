@@ -1,0 +1,6 @@
+C:\Users\Cezar\Documents\GitHub\massive_code\massive_code\massive_code\bin\massive_code.dll.config
+C:\Users\Cezar\Documents\GitHub\massive_code\massive_code\massive_code\bin\massive_code.dll
+C:\Users\Cezar\Documents\GitHub\massive_code\massive_code\massive_code\bin\massive_code.pdb
+C:\Users\Cezar\Documents\GitHub\massive_code\massive_code\massive_code\obj\Debug\massive_code.csprojResolveAssemblyReference.cache
+C:\Users\Cezar\Documents\GitHub\massive_code\massive_code\massive_code\obj\Debug\massive_code.dll
+C:\Users\Cezar\Documents\GitHub\massive_code\massive_code\massive_code\obj\Debug\massive_code.pdb

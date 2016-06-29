@@ -4,14 +4,94 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style16 {
+            font-size: xx-large;
+            color: #FFFFFF;
+        }
+        .auto-style17 {
+            cursor: pointer;
+            width: 445px;
+            color: #FFFFFF;
+            font-size: small;
+            background-color: #009933;
+        }
+        .auto-style18 {
+            width: 766px;
+            color: #CCCCCC;
+            }
+        .auto-style19 {
+            width: 4410px;
+        }
+        .auto-style24 {
+            width: 4410px;
+            color: #CCCCCC;
+        }
+        .auto-style25 {
+            width: 18px;
+            color: #CCCCCC;
+            height: 86px;
+        }
+        .auto-style26 {
+            height: 86px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
+        <table style="width: 100%; background-color: #006699;">
+            <tr>
+                <td class="auto-style7"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style24"></td>
+                <td class="auto-style18" rowspan="4">
+                    <div  class="div_1" style="height: 162px;" >
+                        <asp:HyperLink  CssClass="auto-style9" ID="HyperLink2" runat="server" NavigateUrl="~/registration.aspx">РЕГИСТРАЦИЯ</asp:HyperLink>
+                        &nbsp;
+                        <asp:HyperLink CssClass="auto-style9" ID="HyperLink1" runat="server" NavigateUrl="~/registration.aspx">ВХОД</asp:HyperLink>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style25"></td>
+                <td class="auto-style26" colspan="2"><span class="auto-style16" >MASSIVE CODE</span>
+                    <br class="auto-style7" />
+                    <span class="auto-style11">ASP.NET &amp; C# PROGRAMMING </span>
+                    <br class="auto-style11" />
+                    <span class="auto-style11">МАЛЕНЬКАЯ ИСТОРИЯ БОЛЬШОЙ РАЗРАБОТКИ</span></td>
+            </tr>
+            <tr>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style14">
+                    <asp:Button ID="Button_Download_UnionServer" runat="server" BorderStyle="None" CssClass=" button_mouse_out1" Font-Names="Times New Roman" Height="42px" PostBackUrl="~/union_server.aspx" style="font-size: 12pt" Text="FREE UNION SERVER" Width="220px" />
+                </td>
+                <td class="auto-style19">
+                    <asp:Button ID="Button_Download_UnionClient" runat="server" BorderStyle="None" CssClass=" button_mouse_out1" Font-Names="Times New Roman" Height="42px" PostBackUrl="~/union_client.aspx" style="font-size: 12pt" Text="FREE UNION CLIENT" Width="220px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style14">&nbsp;</td>
+                <td class="auto-style19">&nbsp;</td>
+            </tr>
+        </table>
+        <table style="width: 100%; background-color: #009933;">
+            <tr>
+                <td >
+                    <asp:Button ID="Button_menu_main" runat="server" BackColor="#009933" BorderStyle="None" CssClass="auto-style17" Font-Names="Times New Roman" ForeColor="White" Height="26px" Text="ГЛАВНАЯ" Width="120px" PostBackUrl="~/default.aspx" />
+                    <asp:Button ID="Button_menu_develop" runat="server" BackColor="#009933" BorderStyle="None" BorderWidth="0px" CssClass="auto-style17" Font-Names="Times New Roman" ForeColor="White" Height="26px" Text="РАЗРАБОТКА" Width="150px" PostBackUrl="~/develop.aspx" />
+                    <asp:Button ID="Button_menu_additionally" runat="server" BackColor="#009933" BorderStyle="None" BorderWidth="0px" CssClass="auto-style17" Font-Names="Times New Roman" ForeColor="White" Height="26px" Text="ДОПОЛНИТЕЛЬНО" Width="150px" PostBackUrl="~/additionally.aspx" />
+                    <asp:Button ID="Button_menu_about" runat="server" BackColor="#009933" BorderStyle="None" BorderWidth="0px" CssClass="auto-style17" Font-Names="Times New Roman" ForeColor="White" Height="26px" Text="АВТОР ПРОЕКТА" Width="150px" PostBackUrl="~/about.aspx" />
+                    <asp:Button ID="Button_menu_connect" runat="server" BackColor="#009933" BorderStyle="None" BorderWidth="0px" CssClass="auto-style17" Font-Names="Times New Roman" ForeColor="White" Height="26px" Text="ОБРАТНАЯ СВЯЗЬ" Width="150px" PostBackUrl="~/feedback.aspx" />
+                </td>
+            </tr>
+        </table>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>

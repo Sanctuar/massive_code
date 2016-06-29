@@ -58,9 +58,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.aspx" />
+    <Content Include="additionally.aspx" />
     <Content Include="default.aspx" />
     <Content Include="develop.aspx" />
+    <Content Include="feedback.aspx" />
     <Content Include="registration.aspx" />
+    <Content Include="StyleSheet1.css" />
     <Content Include="union_client.aspx" />
     <Content Include="union_server.aspx" />
     <Content Include="Web.config" />
@@ -72,6 +75,13 @@
     </Compile>
     <Compile Include="about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="additionally.aspx.cs">
+      <DependentUpon>additionally.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="additionally.aspx.designer.cs">
+      <DependentUpon>additionally.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
@@ -87,6 +97,13 @@
     <Compile Include="develop.aspx.designer.cs">
       <DependentUpon>develop.aspx</DependentUpon>
     </Compile>
+    <Compile Include="feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="registration.aspx.cs">
       <DependentUpon>registration.aspx</DependentUpon>
@@ -97,6 +114,7 @@
     </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
