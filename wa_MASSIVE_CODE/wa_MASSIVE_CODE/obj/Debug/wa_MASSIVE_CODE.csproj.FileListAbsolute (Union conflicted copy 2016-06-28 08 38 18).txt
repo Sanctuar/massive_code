@@ -1,0 +1,24 @@
+c:\users\kelt\documents\visual studio 2013\Projects\wa_MASSIVE_CODE\wa_MASSIVE_CODE\bin\wa_MASSIVE_CODE.dll.config
+c:\users\kelt\documents\visual studio 2013\Projects\wa_MASSIVE_CODE\wa_MASSIVE_CODE\bin\wa_MASSIVE_CODE.dll
+c:\users\kelt\documents\visual studio 2013\Projects\wa_MASSIVE_CODE\wa_MASSIVE_CODE\bin\wa_MASSIVE_CODE.pdb
+c:\users\kelt\documents\visual studio 2013\Projects\wa_MASSIVE_CODE\wa_MASSIVE_CODE\obj\Debug\wa_MASSIVE_CODE.csprojResolveAssemblyReference.cache
+c:\users\kelt\documents\visual studio 2013\Projects\wa_MASSIVE_CODE\wa_MASSIVE_CODE\obj\Debug\wa_MASSIVE_CODE.dll
+c:\users\kelt\documents\visual studio 2013\Projects\wa_MASSIVE_CODE\wa_MASSIVE_CODE\obj\Debug\wa_MASSIVE_CODE.pdb
+D:\Mail.Sky\wa_MASSIVE_CODE\wa_MASSIVE_CODE\bin\wa_MASSIVE_CODE.dll.config
+D:\Mail.Sky\wa_MASSIVE_CODE\wa_MASSIVE_CODE\bin\wa_MASSIVE_CODE.dll
+D:\Mail.Sky\wa_MASSIVE_CODE\wa_MASSIVE_CODE\bin\wa_MASSIVE_CODE.pdb
+D:\Mail.Sky\wa_MASSIVE_CODE\wa_MASSIVE_CODE\obj\Debug\wa_MASSIVE_CODE.csprojResolveAssemblyReference.cache
+D:\Mail.Sky\wa_MASSIVE_CODE\wa_MASSIVE_CODE\obj\Debug\wa_MASSIVE_CODE.dll
+D:\Mail.Sky\wa_MASSIVE_CODE\wa_MASSIVE_CODE\obj\Debug\wa_MASSIVE_CODE.pdb
+D:\ARHIVE\MASSIVE CODE\23.06.16\wa_MASSIVE_CODE\wa_MASSIVE_CODE\bin\wa_MASSIVE_CODE.dll.config
+D:\ARHIVE\MASSIVE CODE\23.06.16\wa_MASSIVE_CODE\wa_MASSIVE_CODE\bin\wa_MASSIVE_CODE.dll
+D:\ARHIVE\MASSIVE CODE\23.06.16\wa_MASSIVE_CODE\wa_MASSIVE_CODE\bin\wa_MASSIVE_CODE.pdb
+D:\ARHIVE\MASSIVE CODE\23.06.16\wa_MASSIVE_CODE\wa_MASSIVE_CODE\obj\Debug\wa_MASSIVE_CODE.csprojResolveAssemblyReference.cache
+D:\ARHIVE\MASSIVE CODE\23.06.16\wa_MASSIVE_CODE\wa_MASSIVE_CODE\obj\Debug\wa_MASSIVE_CODE.dll
+D:\ARHIVE\MASSIVE CODE\23.06.16\wa_MASSIVE_CODE\wa_MASSIVE_CODE\obj\Debug\wa_MASSIVE_CODE.pdb
+D:\WORK\wa_MASSIVE_CODE\wa_MASSIVE_CODE\bin\wa_MASSIVE_CODE.dll.config
+D:\WORK\wa_MASSIVE_CODE\wa_MASSIVE_CODE\bin\wa_MASSIVE_CODE.dll
+D:\WORK\wa_MASSIVE_CODE\wa_MASSIVE_CODE\bin\wa_MASSIVE_CODE.pdb
+D:\WORK\wa_MASSIVE_CODE\wa_MASSIVE_CODE\obj\Debug\wa_MASSIVE_CODE.csprojResolveAssemblyReference.cache
+D:\WORK\wa_MASSIVE_CODE\wa_MASSIVE_CODE\obj\Debug\wa_MASSIVE_CODE.dll
+D:\WORK\wa_MASSIVE_CODE\wa_MASSIVE_CODE\obj\Debug\wa_MASSIVE_CODE.pdb

@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="wa_MASSIVE_CODE.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 206px;
+        }
+                                
+        .auto-style5 {
+            height: 23px;
+            color: #FFFFFF;
+        }
+        .auto-style4 {
+            color: #FFFFFF;
+            font-size: xx-large;
+        }
+                        
+        .auto-style6 {
+            width: 506px;
+        }
+        .auto-style7 {
+            width: 100%;
+            height: 206px;
+            background-color: #006699;
+        }
+        .button_mouse_out1 {
+          
+        background-color: #0099FF;
+            color: white;
+        }  
+        
+        .auto-style8 {
+            width: 527px;
+        }
+        .auto-style9 {
+            width: 22px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style7">
+            <tr>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style6">&nbsp;</td>
+                <td class="auto-style8">&nbsp;</td>
+                <td>
+                    <span class="auto-style5">
+                    <asp:HyperLink ID="HyperLink1" runat="server">РЕГИСТРАЦИЯ</asp:HyperLink>
+&nbsp;
+                    <asp:HyperLink ID="HyperLink2" runat="server">ВХОД</asp:HyperLink>
+                    </span>
+                    </td>
+            </tr>
+            <tr>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style6"><span class="auto-style4">MASSIVE CODE</span>
+                    <br class="auto-style1" />
+                    <span class="auto-style5">ASP.NET &amp; C# PROGRAMMING
+                    </span>
+                    <br class="auto-style5" />
+                    <span class="auto-style5">МАЛЕНЬКАЯ ИСТОРИЯ БОЛЬШОЙ РАЗРАБОТКИ</span></td>
+                <td class="auto-style8">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style6">
+                    <asp:Button ID="Button_Download_UnionServer" runat="server" BorderStyle="None" Font-Names="Times New Roman" Height="42px" style="font-size: 12pt" Text="FREE UNION SERVER" Width="220px" CssClass =" button_mouse_out1" PostBackUrl="~/wf_UnionServerDownload.aspx" />
+&nbsp;&nbsp;
+                    <asp:Button ID="Button_Download_UnionClient" runat="server"  BorderStyle="None" Font-Names="Times New Roman" Height="42px" style="font-size: 12pt" Text="FREE UNION CLIENT" Width="220px" CssClass =" button_mouse_out1" OnClick="Button_Download_UnionClient_Click" PostBackUrl="~/wf_UnionClientDownload.aspx" />
+                    &nbsp;&nbsp;
+                    </td>
+                <td class="auto-style8">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style6">&nbsp;</td>
+                <td class="auto-style8">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style6">&nbsp;</td>
+                <td class="auto-style8">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
