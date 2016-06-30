@@ -39,6 +39,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -83,6 +87,8 @@
     <Compile Include="additionally.aspx.designer.cs">
       <DependentUpon>additionally.aspx</DependentUpon>
     </Compile>
+    <Compile Include="cl_GlobalVariables.cs" />
+    <Compile Include="cl_sql.cs" />
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -144,6 +150,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="base\" />
     <Folder Include="Code\" />
     <Folder Include="Images\" />
     <Folder Include="Libraries\" />

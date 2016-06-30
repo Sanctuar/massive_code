@@ -31,6 +31,7 @@
         .auto-style24 {
             width: 4410px;
             color: #CCCCCC;
+            height: 21px;
         }
         .auto-style25 {
             width: 18px;
@@ -40,6 +41,28 @@
         .auto-style26 {
             height: 86px;
         }
+        .auto-style27 {
+            width: 18px;
+            color: #CCCCCC;
+            height: 21px;
+        }
+        .auto-style28 {
+            width: 243px;
+            color: #CCCCCC;
+            height: 21px;
+        }
+        .auto-style29 {
+            color: #CCCCCC;
+            font-size: medium;
+        }
+        .auto-style30 {
+            float: left;
+            width: 100%;
+            height: 149px;
+        }
+        .auto-style31 {
+            font-size: medium;
+        }
     </style>
 </head>
 <body>
@@ -47,14 +70,16 @@
     <div>
         <table style="width: 100%; background-color: #006699;">
             <tr>
-                <td class="auto-style7"></td>
-                <td class="auto-style8"></td>
-                <td class="auto-style24"></td>
+                <td class="auto-style27"></td>
+                <td class="auto-style28"></td>
+                <td class="auto-style24">&nbsp;</td>
                 <td class="auto-style18" rowspan="4">
-                    <div  class="div_1" style="height: 162px;" >
-                        <asp:HyperLink  CssClass="auto-style9" ID="HyperLink2" runat="server" NavigateUrl="~/registration.aspx">РЕГИСТРАЦИЯ</asp:HyperLink>
+                    <div  class="auto-style30" >
+                        <asp:HyperLink  CssClass="auto-style29" ID="HyperLink2" runat="server" NavigateUrl="~/registration.aspx">РЕГИСТРАЦИЯ</asp:HyperLink>
                         &nbsp;
                         <asp:HyperLink CssClass="auto-style9" ID="HyperLink1" runat="server" NavigateUrl="~/registration.aspx">ВХОД</asp:HyperLink>
+                        <br />
+                        <asp:Label ID="Label_UserName" runat="server" CssClass="auto-style31" Text="Label"></asp:Label>
                     </div>
                 </td>
             </tr>

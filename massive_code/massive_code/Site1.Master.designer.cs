@@ -49,6 +49,15 @@ namespace massive_code {
         protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
         
         /// <summary>
+        /// Label_UserName элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_UserName;
+        
+        /// <summary>
         /// Button_Download_UnionServer элемент управления.
         /// </summary>
         /// <remarks>
