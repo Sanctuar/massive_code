@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Drawing;
+using System.Data;
 
 namespace massive_code
 {
@@ -12,6 +13,8 @@ namespace massive_code
     {
         cl_sql g_SQL = new cl_sql();
         cl_GlobalVariables g_GV = new cl_GlobalVariables();
+        cl_Cryptography g_CR = new cl_Cryptography();
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -21,16 +24,35 @@ namespace massive_code
         {
             if (prb_CheckRegistrData() == true)
             {
-                cl_sql.pcl_user_regist lcl_ur = new cl_sql.pcl_user_regist();
+                cl_GlobalVariables.pcl_user_regist lcl_ur = new cl_GlobalVariables.pcl_user_regist();
                 lcl_ur.Name = TextBox_name.Text;
                 lcl_ur.Surname = TextBox_surname.Text;
                 lcl_ur.Login = TextBox_login.Text;
                 lcl_ur.Mail = TextBox_mail.Text;
-                lcl_ur.Password = TextBox_pass.Text;
-                g_SQL.pv_Add_RegistrBase(lcl_ur, g_GV.gs_RegistrBasePath());
+                lcl_ur.Attribute = "null";
+                lcl_ur.Permission = "user";
+                lcl_ur.UID = g_CR.ps_MD5(TextBox_login.Text);
+                lcl_ur.Password = g_CR.ps_MD5(TextBox_pass.Text);
+                lcl_ur.Date = DateTime.Now.ToShortDateString();
+                DataTable ldt_Login = g_SQL.pdt_Find_RegistrBase("Login", lcl_ur.Login, g_GV.gs_RegistrBasePath());
+                DataTable ldt_Mail = g_SQL.pdt_Find_RegistrBase("Mail", lcl_ur.Mail, g_GV.gs_RegistrBasePath());
+                if (ldt_Login.Rows.Count ==0 &ldt_Mail.Rows.Count==0)
+                {
+                    g_SQL.pv_Add_RegistrBase(lcl_ur, g_GV.gs_RegistrBasePath());
+                    cl_GlobalVariables.pcl_UserData lcl_UD = new cl_GlobalVariables.pcl_UserData();
+                    lcl_UD.Login = lcl_ur.Login;
+                    lcl_UD.UID = lcl_ur.UID;
+                    Session.Add("user_data", (object)lcl_UD);
+                    Response.Redirect("default.aspx");
+                }
+                else
+                {
+                    Label_Registr_Error.Text = "указан существующий логин и/или адрес электронной почты!";
+                }
             }
-            else { Label_Registr_Error.Text = "Неверно заполнены поля"; }
+            else { Label_Registr_Error.Text = "неверно заполнены регистрационые данные!"; }
         }
+
 
         private Boolean prb_CheckRegistrData()
         {
@@ -100,6 +122,60 @@ namespace massive_code
         {
             TextBox_repass.BackColor = Color.White;
             Label_Registr_Error.Text = "";
+        }
+
+        protected void butt_SignIn_Click(object sender, EventArgs e)
+        {
+            String ls_Login = TextBox_SignIn_Login.Text;
+            String ls_Pass = TextBox_SignIn_Pass.Text;
+            List<TextBox> list_Box = new List<TextBox>();
+            list_Box.Add(TextBox_SignIn_Login);
+            list_Box.Add(TextBox_SignIn_Pass);
+            Boolean lb_Check = true;
+            foreach (TextBox ltb_Box in list_Box)
+            {
+                if (prb_Check_TextBox_EmptyOrSpace(ltb_Box) == false)
+                { lb_Check = false; }
+            }
+            if (lb_Check == true)
+            {
+                DataTable ldt = g_SQL.pdt_Autorization(ls_Login, g_CR.ps_MD5(ls_Pass), g_GV.gs_RegistrBasePath());
+                if (ldt.Rows.Count > 0)
+                {
+                    cl_GlobalVariables.pcl_UserData lcl_UD = new cl_GlobalVariables.pcl_UserData();
+                    lcl_UD.Login = ls_Login;
+                    lcl_UD.UID = g_CR.ps_MD5(ls_Login);
+                    Session.Add("user_data", (object)lcl_UD);
+                    Response.Redirect("default.aspx");
+                }
+
+                if (ldt.Rows.Count == 0)
+                {
+                    Label_SignIn_Error.Text = "неверно указаны логин и/или пароль!";
+                }
+            }
+        }
+
+        private Boolean prb_Check_TextBox_EmptyOrSpace(TextBox ltb_Box)
+        {
+            if (String.IsNullOrEmpty(ltb_Box.Text) == true || String.IsNullOrWhiteSpace(ltb_Box.Text) == true)
+            {
+                ltb_Box.BackColor = Color.Coral;
+                return false;
+            }
+            return true;
+        }
+
+        protected void TextBox_SignIn_Login_TextChanged(object sender, EventArgs e)
+        {
+            TextBox_SignIn_Login.BackColor = Color.White;
+            Label_SignIn_Error.Text = "";
+        }
+
+        protected void TextBox_SignIn_Pass_TextChanged(object sender, EventArgs e)
+        {
+            TextBox_SignIn_Pass.BackColor = Color.White;
+            Label_SignIn_Error.Text = "";
         }
     }
 }

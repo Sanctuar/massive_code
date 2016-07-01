@@ -15,6 +15,24 @@ namespace massive_code
         {
             return HttpContext.Current.Server.MapPath("base/registration.sdf");
         }
-        
+
+        public class pcl_UserData
+        {
+            public String Login;
+            public String UID;
+        }
+
+        public class pcl_user_regist
+        {
+            public String Name;
+            public String Surname;
+            public String Login;
+            public String Mail;
+            public String Password;
+            public String Date;
+            public String Attribute;
+            public String Permission;
+            public String UID;
+        }
     }
 }

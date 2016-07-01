@@ -87,6 +87,7 @@
     <Compile Include="additionally.aspx.designer.cs">
       <DependentUpon>additionally.aspx</DependentUpon>
     </Compile>
+    <Compile Include="cl_Cryptography.cs" />
     <Compile Include="cl_GlobalVariables.cs" />
     <Compile Include="cl_sql.cs" />
     <Compile Include="default.aspx.cs">
