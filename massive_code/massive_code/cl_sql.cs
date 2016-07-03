@@ -63,7 +63,7 @@ namespace massive_code
             sql_SQL_Connection = new SqlCeConnection(sql_SQL_Engine.LocalConnectionString);
             sql_SQL_Connection.Open();
             sql_SQL_Command = sql_SQL_Connection.CreateCommand();
-            sql_SQL_Command.CommandText = "SELECT "+ls_Param+" FROM Registration WHERE "+ls_Param+" = '" + ls_Data + "'";
+            sql_SQL_Command.CommandText = "SELECT * FROM Registration WHERE "+ls_Param+" = '" + ls_Data + "'";
             SqlCeDataReader n_SQL_DataReader = sql_SQL_Command.ExecuteReader();
             DataTable n_dt = new DataTable();
             n_dt.Load(n_SQL_DataReader);
@@ -77,12 +77,23 @@ namespace massive_code
             sql_SQL_Connection = new SqlCeConnection(sql_SQL_Engine.LocalConnectionString);
             sql_SQL_Connection.Open();
             sql_SQL_Command = sql_SQL_Connection.CreateCommand();
-            sql_SQL_Command.CommandText = "SELECT Login FROM Registration WHERE Login='" + ls_Login + "' AND Password='" + ls_Password + "' AND Attribute != 'BLOCKED'";
+            sql_SQL_Command.CommandText = "SELECT * FROM Registration WHERE Login='" + ls_Login + "' AND Password='" + ls_Password + "' AND Attribute != 'blocked'";
             SqlCeDataReader n_SQL_DataReader = sql_SQL_Command.ExecuteReader();
             DataTable n_dt = new DataTable();
             n_dt.Load(n_SQL_DataReader);
             sql_SQL_Connection.Close();
             return n_dt;
+        }
+
+        public void pv_Update_RegistrBase(String ls_UpdateParam, String ls_UpdateData, String ls_WhereParam, String ls_WhereData, String ls_BasePath)
+        {
+            sql_SQL_Engine = new SqlCeEngine("Data Source='" + ls_BasePath + "';");
+            sql_SQL_Connection = new SqlCeConnection(sql_SQL_Engine.LocalConnectionString);
+            sql_SQL_Connection.Open();
+            sql_SQL_Command = sql_SQL_Connection.CreateCommand();
+            sql_SQL_Command.CommandText = "UPDATE Registration SET " + ls_UpdateParam + "='"+ls_UpdateData+"+'WHERE " + ls_WhereParam + " = '" + ls_WhereData + "'";
+            sql_SQL_Command.ExecuteScalar();
+            sql_SQL_Connection.Close();
         }
     }
 }

@@ -13,7 +13,7 @@ namespace massive_code
     {
         public String gs_RegistrBasePath()
         {
-            return HttpContext.Current.Server.MapPath("base/registration.sdf");
+            return HttpContext.Current.Server.MapPath("app_data/base/registration.sdf");
         }
 
         public class pcl_UserData
@@ -34,5 +34,8 @@ namespace massive_code
             public String Permission;
             public String UID;
         }
+
+        public String ps_MailSupportAddress = "support@massivecode.ru";
+        public String ps_MailSupportPassword = "sUppoRt#7";
     }
 }

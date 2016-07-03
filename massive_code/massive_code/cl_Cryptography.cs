@@ -15,5 +15,9 @@ namespace massive_code
             byte[] checkSum = lmd5.ComputeHash(Encoding.UTF8.GetBytes(ls_Data));
             return BitConverter.ToString(checkSum).Replace("-", String.Empty);
         }
+        public String ps_UID()
+        {
+            return Guid.NewGuid().ToString();
+        }
     }
 }

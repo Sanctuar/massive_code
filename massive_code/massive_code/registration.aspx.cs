@@ -14,6 +14,7 @@ namespace massive_code
         cl_sql g_SQL = new cl_sql();
         cl_GlobalVariables g_GV = new cl_GlobalVariables();
         cl_Cryptography g_CR = new cl_Cryptography();
+        cl_Mail g_Mail = new cl_Mail();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -29,9 +30,9 @@ namespace massive_code
                 lcl_ur.Surname = TextBox_surname.Text;
                 lcl_ur.Login = TextBox_login.Text;
                 lcl_ur.Mail = TextBox_mail.Text;
-                lcl_ur.Attribute = "null";
+                lcl_ur.Attribute = "mail_confirm";
                 lcl_ur.Permission = "user";
-                lcl_ur.UID = g_CR.ps_MD5(TextBox_login.Text);
+                lcl_ur.UID = g_CR.ps_UID();
                 lcl_ur.Password = g_CR.ps_MD5(TextBox_pass.Text);
                 lcl_ur.Date = DateTime.Now.ToShortDateString();
                 DataTable ldt_Login = g_SQL.pdt_Find_RegistrBase("Login", lcl_ur.Login, g_GV.gs_RegistrBasePath());
@@ -39,11 +40,15 @@ namespace massive_code
                 if (ldt_Login.Rows.Count ==0 &ldt_Mail.Rows.Count==0)
                 {
                     g_SQL.pv_Add_RegistrBase(lcl_ur, g_GV.gs_RegistrBasePath());
-                    cl_GlobalVariables.pcl_UserData lcl_UD = new cl_GlobalVariables.pcl_UserData();
-                    lcl_UD.Login = lcl_ur.Login;
-                    lcl_UD.UID = lcl_ur.UID;
-                    Session.Add("user_data", (object)lcl_UD);
-                    Response.Redirect("default.aspx");
+                    g_Mail.pv_Mail_ConfirmRegistration(lcl_ur.UID, lcl_ur.Mail);
+                    Session.Add("information", "mail_confirm");
+                    Response.Redirect("information.aspx");
+
+                    //cl_GlobalVariables.pcl_UserData lcl_UD = new cl_GlobalVariables.pcl_UserData();
+                    //lcl_UD.Login = lcl_ur.Login;
+                    //lcl_UD.UID = lcl_ur.UID;
+                    //Session.Add("user_data", (object)lcl_UD);
+                    //Response.Redirect("default.aspx");
                 }
                 else
                 {
@@ -52,6 +57,7 @@ namespace massive_code
             }
             else { Label_Registr_Error.Text = "неверно заполнены регистрационые данные!"; }
         }
+
 
 
         private Boolean prb_CheckRegistrData()
@@ -142,11 +148,18 @@ namespace massive_code
                 DataTable ldt = g_SQL.pdt_Autorization(ls_Login, g_CR.ps_MD5(ls_Pass), g_GV.gs_RegistrBasePath());
                 if (ldt.Rows.Count > 0)
                 {
-                    cl_GlobalVariables.pcl_UserData lcl_UD = new cl_GlobalVariables.pcl_UserData();
-                    lcl_UD.Login = ls_Login;
-                    lcl_UD.UID = g_CR.ps_MD5(ls_Login);
-                    Session.Add("user_data", (object)lcl_UD);
-                    Response.Redirect("default.aspx");
+                    if (ldt.Rows[0]["attribute"].ToString() == "mail_confirm")
+                    {
+                        Label_SignIn_Error.Text = "вы не подтвердили свою учетную запись!";
+                    }
+                    else
+                    {
+                        cl_GlobalVariables.pcl_UserData lcl_UD = new cl_GlobalVariables.pcl_UserData();
+                        lcl_UD.Login = ls_Login;
+                        lcl_UD.UID = g_CR.ps_UID();
+                        Session.Add("user_data", (object)lcl_UD);
+                        Response.Redirect("default.aspx");
+                    }
                 }
 
                 if (ldt.Rows.Count == 0)

@@ -94,7 +94,7 @@
                     <tr>
                         <td class="auto-style54">Адрес электронной почты</td>
                         <td>
-                            <asp:TextBox ID="TextBox_mail" runat="server" BorderColor="#006699" BorderStyle="Solid" BorderWidth="1px" CssClass="auto-style56" Width="292px" OnTextChanged="TextBox_mail_TextChanged"></asp:TextBox>
+                            <asp:TextBox ID="TextBox_mail" runat="server" BorderColor="#006699" BorderStyle="Solid" BorderWidth="1px" CssClass="auto-style56" Width="292px" OnTextChanged="TextBox_mail_TextChanged" TextMode="Email"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
