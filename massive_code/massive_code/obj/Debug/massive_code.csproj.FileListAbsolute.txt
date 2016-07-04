@@ -10,3 +10,9 @@ C:\Users\Lestat\Documents\GitHub\massive_code\massive_code\massive_code\bin\mass
 C:\Users\Lestat\Documents\GitHub\massive_code\massive_code\massive_code\obj\Debug\massive_code.csprojResolveAssemblyReference.cache
 C:\Users\Lestat\Documents\GitHub\massive_code\massive_code\massive_code\obj\Debug\massive_code.dll
 C:\Users\Lestat\Documents\GitHub\massive_code\massive_code\massive_code\obj\Debug\massive_code.pdb
+C:\Users\Kelt\Documents\GitHub\massive_code\massive_code\massive_code\bin\massive_code.dll.config
+C:\Users\Kelt\Documents\GitHub\massive_code\massive_code\massive_code\bin\massive_code.dll
+C:\Users\Kelt\Documents\GitHub\massive_code\massive_code\massive_code\bin\massive_code.pdb
+C:\Users\Kelt\Documents\GitHub\massive_code\massive_code\massive_code\obj\Debug\massive_code.csprojResolveAssemblyReference.cache
+C:\Users\Kelt\Documents\GitHub\massive_code\massive_code\massive_code\obj\Debug\massive_code.dll
+C:\Users\Kelt\Documents\GitHub\massive_code\massive_code\massive_code\obj\Debug\massive_code.pdb

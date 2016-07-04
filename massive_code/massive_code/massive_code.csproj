@@ -65,11 +65,10 @@
   <ItemGroup>
     <Content Include="about.aspx" />
     <Content Include="additionally.aspx" />
-    <Content Include="default.css" />
-    <Content Include="Images\08.jpg" />
     <Content Include="default.aspx" />
     <Content Include="develop.aspx" />
     <Content Include="feedback.aspx" />
+    <Content Include="Images\08.jpg" />
     <Content Include="information.aspx" />
     <Content Include="registration.aspx" />
     <Content Include="StyleSheet1.css" />

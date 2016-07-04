@@ -1,110 +1,48 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="massive_code._default"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
     <style type="text/css">
-        .auto-style34 {
-            width: 100%;
-            height: 314px;
-        }
-        .auto-style35 {
-            width: 20px;
-        }
-        .auto-style36 {
-            width: 798px;
-        }
-        .auto-style37 {
-            width: 20px;
-            height: 74px;
-        }
-        .auto-style38 {
-            width: 798px;
-            height: 74px;
-        }
-        .auto-style39 {
-            height: 74px;
-        }
-        .auto-style42 {
-            width: 273px;
-        }
-        .auto-style43 {
-            width: 273px;
-            height: 74px;
-        }
-        .auto-style45 {
-            width: 798px;
-            height: 100px;
-        }
-        .auto-style46 {
-            width: 273px;
-            height: 100px;
-        }
         .auto-style47 {
-            height: 100px;
+            width: 1166px;
+            font-size: 16pt;
+            background-color: #4697A8;
         }
         .auto-style48 {
-            width: 20px;
-            height: 31px;
+            width: 1163px;
         }
         .auto-style49 {
-            width: 798px;
-            height: 31px;
-        }
-        .auto-style50 {
-            width: 273px;
-            height: 31px;
+            width: 1157px;
         }
         .auto-style51 {
-            height: 31px;
+            width: 145px;
         }
-        .auto-style56 {
-            color: #000000;
+        .auto-style52 {
+            width: 35px;
+        }
+        .auto-style53 {
+            font-size: 16pt;
         }
     </style>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
-    <table class="auto-style34" style="border-width: 0px; padding: 0px; margin: 0px; border-spacing: 0px;">
+    <table style="width:100%;">
         <tr>
-            <td class="auto-style48"></td>
-            <td class="auto-style49"></td>
-            <td class="auto-style50"></td>
+            <td class="auto-style52"></td>
             <td class="auto-style51"></td>
+            <td class="auto-style49"></td>
         </tr>
         <tr>
-            <td class="auto-style37">
-                <asp:Panel ID="Panel1" runat="server" CssClass="panel_short_1" Height="80px" Width="20px" >
-                </asp:Panel>
+            <td class="auto-style52">&nbsp;</td>
+            <td class="auto-style51">
+                <asp:Image ID="Image1" runat="server" CssClass="auto-style53" Height="140px" ImageUrl="~/Images/08.jpg" Width="159px" />
             </td>
-            <td class="auto-style38">
-                <asp:Panel ID="Panel3" runat="server" CssClass="panel_long_1" Height="80px" >
-                </asp:Panel>
-            </td>
-            <td class="auto-style43">&nbsp;</td>
-            <td class="auto-style39">&nbsp;</td>
+            <td class="auto-style47">Ты сможешь ознакомиться с процессом разработки проекта Union Solution. Вся информация предназначена лишь для новичков программирования C# которые хотят понять каким образом строятся большие приложения от начальной идеи до финального релиза. </td>
         </tr>
         <tr>
-            <td class="default_panel_small_1">
-                <asp:Panel ID="Panel2" runat="server" CssClass="panel_short_1" Height="80px" Width="20px" >
-                </asp:Panel>
-            </td>
-            <td class="auto-style45">
-                <asp:Panel ID="Panel4" runat="server" CssClass="panel_long_1" Height="80px" >
-                </asp:Panel>
-            </td>
-            <td class="auto-style46">&nbsp;</td>
-            <td class="auto-style47">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style35">
-                <asp:Panel ID="Panel6" runat="server" CssClass="panel_short_1" Height="80px" Width="20px" >
-                </asp:Panel>
-            </td>
-            <td class="auto-style36">
-                <asp:Panel ID="Panel5" runat="server" CssClass="panel_long_1" Height="80px" >
-                </asp:Panel>
-            </td>
-            <td class="auto-style42">&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style52"></td>
+            <td class="auto-style51"></td>
+            <td class="auto-style48"></td>
         </tr>
     </table>
-    
 </asp:Content>

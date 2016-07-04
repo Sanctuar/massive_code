@@ -47,11 +47,14 @@
         .auto-style15 {
             background-color: #009933;
         }
-                .button_mouse_out1 {
-          
-        background-color: #0099FF;
-            color: white;
-        }  
+.button_mouse_out1 {
+    background-color: #0099FF;
+    color: white;
+}
+.button_mouse_out2 {
+    background-color: #57c71b;
+    color: white;
+}
         
         .button_mouse_over1 {
           cursor: pointer;
@@ -77,3 +80,42 @@
            border-color:#3f67a5;
            border-width:2px;
         }  
+                 .auto-style16 {
+            font-size: xx-large;
+            color: #FFFFFF;
+        }
+        .auto-style17 {
+            cursor: pointer;
+            width: 445px;
+            color: #FFFFFF;
+            font-size: small;
+            background-color: #009933;
+        }
+        .auto-style19 {
+            width: 4410px;
+        }
+        .auto-style24 {
+            width: 4410px;
+            color: #CCCCCC;
+            height: 21px;
+        }
+        .auto-style26 {
+            height: 86px;
+        }
+        .auto-style27 {
+            width: 18px;
+            color: #CCCCCC;
+            }
+        .auto-style28 {
+            width: 243px;
+            color: #CCCCCC;
+            height: 21px;
+        }
+        .auto-style32 {
+            width: 4480px;
+            color: #CCCCCC;
+            height: 21px;
+        }
+        .auto-style33 {
+            width: 4480px;
+        }

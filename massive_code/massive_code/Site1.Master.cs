@@ -52,6 +52,8 @@ namespace massive_code
             {
                 lcl_UD = (cl_GlobalVariables.pcl_UserData)lo_UserData;
                 Label_UserName.Text = "Добро пожаловать: " + lcl_UD.Login.ToString();
+                Button_Registr.Visible = false;
+                Button_SignIn.Visible = false;
             }
         }
     }

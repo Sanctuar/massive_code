@@ -10,59 +10,42 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
-        .auto-style16 {
-            font-size: xx-large;
-            color: #FFFFFF;
-        }
-        .auto-style17 {
-            cursor: pointer;
-            width: 445px;
-            color: #FFFFFF;
-            font-size: small;
-            background-color: #009933;
-        }
-        .auto-style18 {
-            width: 766px;
+        .auto-style34 {
+            width: 610px;
             color: #CCCCCC;
-            }
-        .auto-style19 {
-            width: 4410px;
+            height: 1px;
         }
-        .auto-style24 {
+        .auto-style35 {
+            width: 26139px;
+            color: #CCCCCC;
+            height: 1px;
+        }
+        .auto-style36 {
             width: 4410px;
             color: #CCCCCC;
-            height: 21px;
+            height: 1px;
+            font-size: 2pt;
+            text-align: center;
         }
-        .auto-style25 {
-            width: 18px;
-            color: #CCCCCC;
-            height: 86px;
+        .auto-style37 {
+            width: 26139px;
         }
-        .auto-style26 {
-            height: 86px;
+        .auto-style39 {
+            height: 70px;
         }
-        .auto-style27 {
-            width: 18px;
-            color: #CCCCCC;
-            height: 21px;
+        .auto-style43 {
+            width: 610px;
         }
-        .auto-style28 {
-            width: 243px;
-            color: #CCCCCC;
-            height: 21px;
-        }
-        .auto-style29 {
-            color: #CCCCCC;
+        .auto-style44 {
+            text-align: right;
             font-size: medium;
         }
-        .auto-style30 {
-            float: left;
-            width: 100%;
-            height: 200px;
+        .auto-style45 {
+            text-align: right;
         }
-        .auto-style31 {
-            font-size: medium;
-            color: #FFFFFF;
+        .auto-style46 {
+            font-size: 2pt;
+            text-align: right;
         }
     </style>
 </head>
@@ -71,43 +54,45 @@
     <div>
         <table style="width: 100%; background-color: #006699;">
             <tr>
-                <td class="auto-style27"></td>
-                <td class="auto-style28"></td>
-                <td class="auto-style24">&nbsp;</td>
-                <td class="auto-style18" rowspan="4">
-                    <div  class="auto-style30" >
-                        <asp:HyperLink  CssClass="auto-style29" ID="HyperLink2" runat="server" NavigateUrl="~/registration.aspx">РЕГИСТРАЦИЯ</asp:HyperLink>
-                        &nbsp;
-                        <asp:HyperLink CssClass="auto-style9" ID="HyperLink1" runat="server" NavigateUrl="~/registration.aspx">ВХОД</asp:HyperLink>
-                        <br />
-                        <asp:Label ID="Label_UserName" runat="server" CssClass="auto-style31" Text="Label"></asp:Label>
-                    </div>
+                <td class="auto-style27" rowspan="4"></td>
+                <td class="auto-style34"></td>
+                <td class="auto-style35"></td>
+                <td class="auto-style36">
+                    <asp:Label ID="Label_UserName" runat="server" CssClass="auto-style44" Text="Label"></asp:Label>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style25"></td>
-                <td class="auto-style26" colspan="2"><span class="auto-style16" >MASSIVE CODE</span>
+                <td class="auto-style39" colspan="2"><span class="auto-style16" >MASSIVE CODE</span>
                     <br class="auto-style7" />
                     <span class="auto-style11">ASP.NET &amp; C# PROGRAMMING </span>
                     <br class="auto-style11" />
-                    <span class="auto-style11">МАЛЕНЬКАЯ ИСТОРИЯ БОЛЬШОЙ РАЗРАБОТКИ</span></td>
+                    <span class="auto-style11">МАЛЕНЬКАЯ ИСТОРИЯ БОЛЬШОЙ РАЗРАБОТКИ<br />
+                    <br />
+                    </span></td>
+                <td class="auto-style39 auto-style46">
+                    <asp:Button ID="Button_Registr" runat="server" BorderStyle="None" CssClass=" button_mouse_out2" Font-Names="Times New Roman" Height="30px" style="font-size: small;" Text="РЕГИСТРАЦИЯ" Width="170px" BorderColor="#0066FF" PostBackUrl="~/registration.aspx" />
+                    <br />
+                    <br />
+                    <asp:Button ID="Button_SignIn" runat="server" BorderStyle="None" CssClass=" button_mouse_out2" Font-Names="Times New Roman" Height="30px" style="font-size: small" Text="ВОЙТИ" Width="170px" PostBackUrl="~/registration.aspx" />
+                </td>
             </tr>
             <tr>
-                <td class="auto-style1">&nbsp;</td>
-                <td class="auto-style14">
-                    <asp:Button ID="Button_Download_UnionServer" runat="server" BorderStyle="None" CssClass=" button_mouse_out1" Font-Names="Times New Roman" Height="42px" PostBackUrl="~/union_server.aspx" style="font-size: 12pt" Text="FREE UNION SERVER" Width="220px" />
+                <td class="auto-style43">
+                    <asp:Button ID="Button_Download_UnionServer" runat="server" BorderStyle="None" CssClass=" button_mouse_out1" Font-Names="Times New Roman" Height="60px" PostBackUrl="~/union_server.aspx" style="font-size: 12pt" Text="FREE UNION SERVER" Width="220px" />
+                </td>
+                <td class="auto-style37">
+                    <asp:Button ID="Button_Download_UnionClient" runat="server" BorderStyle="None" CssClass=" button_mouse_out1" Font-Names="Times New Roman" Height="60px" PostBackUrl="~/union_client.aspx" style="font-size: 12pt" Text="FREE UNION CLIENT" Width="220px" />
                 </td>
                 <td class="auto-style19">
-                    <asp:Button ID="Button_Download_UnionClient" runat="server" BorderStyle="None" CssClass=" button_mouse_out1" Font-Names="Times New Roman" Height="42px" PostBackUrl="~/union_client.aspx" style="font-size: 12pt" Text="FREE UNION CLIENT" Width="220px" />
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style1">&nbsp;</td>
-                <td class="auto-style14">&nbsp;</td>
+                <td class="auto-style43">&nbsp;</td>
+                <td class="auto-style37">&nbsp;</td>
                 <td class="auto-style19">&nbsp;</td>
             </tr>
         </table>
-        <table style="width: 100%; background-color: #009933;">
+        <table style="width: 100%; background-color: #009933; height:50px;">
             <tr>
                 <td >
                     <asp:Button ID="Button_menu_main" runat="server" BackColor="#009933" BorderStyle="None" CssClass="auto-style17" Font-Names="Times New Roman" ForeColor="White" Height="26px" Text="ГЛАВНАЯ" Width="120px" PostBackUrl="~/default.aspx" />
