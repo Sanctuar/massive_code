@@ -1,4 +1,6 @@
-﻿body {
+﻿.body {
+    margin:0;
+    
 }
 .auto-style12 {
             cursor: pointer;
@@ -63,3 +65,15 @@
 .label_user.name {
     float:right;
 }
+       .panel_long_1 {
+           border-style:solid;
+           border-color:#3f67a5;
+           border-width:2px;
+           background-color:#63B1EB;
+        }  
+         .panel_short_1 {
+             background-color:#006699;
+           border-style:solid;
+           border-color:#3f67a5;
+           border-width:2px;
+        }  

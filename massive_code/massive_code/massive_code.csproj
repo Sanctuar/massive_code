@@ -65,6 +65,8 @@
   <ItemGroup>
     <Content Include="about.aspx" />
     <Content Include="additionally.aspx" />
+    <Content Include="default.css" />
+    <Content Include="Images\08.jpg" />
     <Content Include="default.aspx" />
     <Content Include="develop.aspx" />
     <Content Include="feedback.aspx" />
@@ -164,7 +166,6 @@
   <ItemGroup>
     <Folder Include="App_Data\base\" />
     <Folder Include="App_Data\Code\" />
-    <Folder Include="App_Data\Images\" />
     <Folder Include="App_Data\Libraries\" />
     <Folder Include="App_Data\Text\" />
   </ItemGroup>
