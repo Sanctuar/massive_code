@@ -91,9 +91,23 @@ namespace massive_code
             sql_SQL_Connection = new SqlCeConnection(sql_SQL_Engine.LocalConnectionString);
             sql_SQL_Connection.Open();
             sql_SQL_Command = sql_SQL_Connection.CreateCommand();
-            sql_SQL_Command.CommandText = "UPDATE Registration SET " + ls_UpdateParam + "='"+ls_UpdateData+"+'WHERE " + ls_WhereParam + " = '" + ls_WhereData + "'";
+            sql_SQL_Command.CommandText = "UPDATE Registration SET " + ls_UpdateParam + "='"+ls_UpdateData+"' WHERE " + ls_WhereParam + " = '" + ls_WhereData + "'";
             sql_SQL_Command.ExecuteScalar();
             sql_SQL_Connection.Close();
+        }
+
+        public DataTable pdt_Read_RegistrBase(String ls_BasePath)
+        {
+            sql_SQL_Engine = new SqlCeEngine("Data Source='" + ls_BasePath + "';");
+            sql_SQL_Connection = new SqlCeConnection(sql_SQL_Engine.LocalConnectionString);
+            sql_SQL_Connection.Open();
+            sql_SQL_Command = sql_SQL_Connection.CreateCommand();
+            sql_SQL_Command.CommandText = "SELECT * FROM Registration";
+            SqlCeDataReader n_SQL_DataReader = sql_SQL_Command.ExecuteReader();
+            DataTable n_dt = new DataTable();
+            n_dt.Load(n_SQL_DataReader);
+            sql_SQL_Connection.Close();
+            return n_dt;
         }
     }
 }

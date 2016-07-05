@@ -155,8 +155,8 @@ namespace massive_code
                     else
                     {
                         cl_GlobalVariables.pcl_UserData lcl_UD = new cl_GlobalVariables.pcl_UserData();
-                        lcl_UD.Login = ls_Login;
-                        lcl_UD.UID = g_CR.ps_UID();
+                        lcl_UD.Login = ldt.Rows[0]["Login"].ToString();
+                        lcl_UD.UID = ldt.Rows[0]["UID"].ToString();
                         Session.Add("user_data", (object)lcl_UD);
                         Response.Redirect("default.aspx");
                     }

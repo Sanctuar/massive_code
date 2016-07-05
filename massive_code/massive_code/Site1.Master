@@ -13,22 +13,15 @@
         .auto-style34 {
             width: 610px;
             color: #CCCCCC;
-            height: 1px;
+            height: 34px;
         }
         .auto-style35 {
-            width: 26139px;
+            width: 27594px;
             color: #CCCCCC;
-            height: 1px;
-        }
-        .auto-style36 {
-            width: 4410px;
-            color: #CCCCCC;
-            height: 1px;
-            font-size: 2pt;
-            text-align: center;
+            height: 34px;
         }
         .auto-style37 {
-            width: 26139px;
+            width: 27594px;
         }
         .auto-style39 {
             height: 70px;
@@ -36,15 +29,14 @@
         .auto-style43 {
             width: 610px;
         }
-        .auto-style44 {
-            text-align: right;
-            font-size: medium;
-        }
-        .auto-style45 {
-            text-align: right;
-        }
         .auto-style46 {
             font-size: 2pt;
+            text-align: right;
+        }
+        .auto-style47a {
+            width: 4410px;
+            color: #CCCCCC;
+            height: 34px;
             text-align: right;
         }
     </style>
@@ -57,8 +49,9 @@
                 <td class="auto-style27" rowspan="4"></td>
                 <td class="auto-style34"></td>
                 <td class="auto-style35"></td>
-                <td class="auto-style36">
-                    <asp:Label ID="Label_UserName" runat="server" CssClass="auto-style44" Text="Label"></asp:Label>
+                <td class="auto-style47a">
+                    <asp:LinkButton ID="LinkButton_UserName" runat="server" PostBackUrl="~/panel.aspx" style="color: #FFFFFF"></asp:LinkButton>
+                    <asp:ImageButton ID="ImageButton_userexit" runat="server" ImageAlign="AbsMiddle" ImageUrl="~/Images/img_user_exit.png" OnClick="ImageButton_userexit_Click" Width="20px" />
                 </td>
             </tr>
             <tr>

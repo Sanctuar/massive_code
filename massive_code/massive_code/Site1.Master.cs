@@ -16,7 +16,8 @@ namespace massive_code
         cl_Cryptography g_CR = new cl_Cryptography();
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label_UserName.Text = "";
+            LinkButton_UserName.Visible = false;
+            ImageButton_userexit.Visible = false;
             Button_Download_UnionServer.Attributes.Add("onmouseover", "this.className='button_mouse_over1'");
             Button_Download_UnionServer.Attributes.Add("onmouseout", "this.className='button_mouse_out1'");
             Button_Download_UnionClient.Attributes.Add("onmouseover", "this.className='button_mouse_over1'");
@@ -51,10 +52,19 @@ namespace massive_code
             if ( lo_UserData!= null)
             {
                 lcl_UD = (cl_GlobalVariables.pcl_UserData)lo_UserData;
-                Label_UserName.Text = "Добро пожаловать: " + lcl_UD.Login.ToString();
+                LinkButton_UserName.Text = "Добро пожаловать: " + lcl_UD.Login.ToString();
+                LinkButton_UserName.Visible = true;
+                ImageButton_userexit.Visible = true;
                 Button_Registr.Visible = false;
                 Button_SignIn.Visible = false;
             }
+        }
+
+        protected void ImageButton_userexit_Click(object sender, ImageClickEventArgs e)
+        {
+            Session["user_data"] = null;
+            Session["panel_user_data"] = null;
+            Response.Redirect("default.aspx");
         }
     }
 }

@@ -69,7 +69,10 @@
     <Content Include="develop.aspx" />
     <Content Include="feedback.aspx" />
     <Content Include="Images\08.jpg" />
+    <Content Include="Images\img_user_exit.png" />
+    <Content Include="Images\img_user_icon.png" />
     <Content Include="information.aspx" />
+    <Content Include="panel.aspx" />
     <Content Include="registration.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="union_client.aspx" />
@@ -122,6 +125,13 @@
     </Compile>
     <Compile Include="information.aspx.designer.cs">
       <DependentUpon>information.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="panel.aspx.cs">
+      <DependentUpon>panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panel.aspx.designer.cs">
+      <DependentUpon>panel.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="registration.aspx.cs">

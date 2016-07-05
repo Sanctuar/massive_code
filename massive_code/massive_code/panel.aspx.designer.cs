@@ -10,132 +10,105 @@
 namespace massive_code {
     
     
-    public partial class Site1 {
+    public partial class panel {
         
         /// <summary>
-        /// head элемент управления.
+        /// Label_error элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Label Label_error;
         
         /// <summary>
-        /// form1 элемент управления.
+        /// Panel_info элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Panel Panel_info;
         
         /// <summary>
-        /// LinkButton_UserName элемент управления.
+        /// Label_Login элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton_UserName;
+        protected global::System.Web.UI.WebControls.Label Label_Login;
         
         /// <summary>
-        /// ImageButton_userexit элемент управления.
+        /// Label_Name элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton_userexit;
+        protected global::System.Web.UI.WebControls.Label Label_Name;
         
         /// <summary>
-        /// Button_Registr элемент управления.
+        /// Label_Surname элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_Registr;
+        protected global::System.Web.UI.WebControls.Label Label_Surname;
         
         /// <summary>
-        /// Button_SignIn элемент управления.
+        /// Label_Permission элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_SignIn;
+        protected global::System.Web.UI.WebControls.Label Label_Permission;
         
         /// <summary>
-        /// Button_Download_UnionServer элемент управления.
+        /// Label_RegistrDate элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_Download_UnionServer;
+        protected global::System.Web.UI.WebControls.Label Label_RegistrDate;
         
         /// <summary>
-        /// Button_Download_UnionClient элемент управления.
+        /// Label_Mail элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_Download_UnionClient;
+        protected global::System.Web.UI.WebControls.Label Label_Mail;
         
         /// <summary>
-        /// Button_menu_main элемент управления.
+        /// LinkButton_ShowRegistrBase элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_menu_main;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton_ShowRegistrBase;
         
         /// <summary>
-        /// Button_menu_develop элемент управления.
+        /// GridView1 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_menu_develop;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// Button_menu_additionally элемент управления.
+        /// SqlDataSource1 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_menu_additionally;
-        
-        /// <summary>
-        /// Button_menu_about элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_menu_about;
-        
-        /// <summary>
-        /// Button_menu_connect элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_menu_connect;
-        
-        /// <summary>
-        /// ContentPlaceHolder1 элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }

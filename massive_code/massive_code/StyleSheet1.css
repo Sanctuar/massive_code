@@ -11,8 +11,7 @@
             width: 18px;
         }
         .auto-style2 {
-            width: 131px;
-        }
+}
         .auto-style4 {
         }
         .auto-style5 {
@@ -54,6 +53,7 @@
 .button_mouse_out2 {
     background-color: #57c71b;
     color: white;
+    cursor:pointer;
 }
         
         .button_mouse_over1 {
