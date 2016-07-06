@@ -68,7 +68,8 @@
     <Content Include="default.aspx" />
     <Content Include="develop.aspx" />
     <Content Include="feedback.aspx" />
-    <Content Include="Images\08.jpg" />
+    <Content Include="Images\img_default_1.png" />
+    <Content Include="Images\img_default_2.png" />
     <Content Include="Images\img_user_exit.png" />
     <Content Include="Images\img_user_icon.png" />
     <Content Include="information.aspx" />
